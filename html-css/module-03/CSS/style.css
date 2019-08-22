@@ -1,0 +1,104 @@
+header {
+    text-align: center;
+    font-size: 14px;
+    font-style: "Playfair Display";
+}
+.nav {
+    display: inline-block;
+    padding: 71px 52px;
+}
+
+.nav a {
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 1.714;
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: #03a9f4;
+}
+
+.conteiner {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.content {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.list-foto {
+    display: inline-block;
+    width: 420px;
+    margin-right: 60px;
+    margin-bottom: 130px;
+}
+
+.list-foto:nth-child(2n) {
+    margin-right: 0;
+}
+
+section > article:nth-last-of-type(-n + 2) {
+    margin-bottom: 85px;
+}
+
+.sign-foto {
+    padding-top: 30px;
+    padding-bottom: 26px;
+    text-align: left;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    color: rgb(180, 173, 158);
+    text-transform: uppercase;
+}
+
+.list-foto h2 {
+    text-align: left;
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
+}
+
+.list-foto p {
+    text-align: left;
+    font-size: 14px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.714;
+}
+
+button {
+    margin-bottom: 22px;
+    padding: 20px 34px;
+    font-size: 20px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 24px;
+}
+
+.visually-hiden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
