@@ -3,10 +3,16 @@ header {
     font-size: 14px;
     font-style: "Playfair Display";
 }
+
+.list-nav {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
 .list-item-nav {
     display: inline-block;
     padding: 71px 52px;
-    font-size: 0;
 }
 
 .list-item-nav a {
@@ -43,14 +49,18 @@ header {
     width: 420px;
     margin-right: 60px;
     margin-bottom: 130px;
+    
 }
 
 .list-foto:nth-child(2n) {
     margin-right: 0;
+    background-color: rgb(251, 2, 2);
 }
 
 section > article:nth-last-of-type(-n + 2) {
     margin-bottom: 85px;
+    background-color: r
+    ;
 }
 
 .list-foto img {
@@ -59,11 +69,10 @@ section > article:nth-last-of-type(-n + 2) {
 
 .list-foto .sign-foto {
     margin: 0;
-    margin-bottom: 26px;
-    text-align: left;
-    font-size: 14px;
-    font-family: "Ubuntu", sans-serif;
-    color: rgb(180, 173, 158);
+    margin-bottom: 30px;
+    font-family: "Playfair Display";
+    color: rgb(98, 98, 98);
+    line-height: 1.2;
     text-transform: uppercase;
 }
 

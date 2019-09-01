@@ -1,0 +1,46 @@
+.conteiner {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.nav-bar {
+  height: 100px;
+  padding: 38px 0;
+}
+
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.nav-bar-logo {
+  font-size: 30px;
+  font-family: "Roboto";
+  color: rgb(85, 82, 82);
+  text-transform: uppercase;
+  line-height: 1.067;
+  float: left;
+}
+
+.nav-bar-logo::first-letter {
+  color: rgb(26, 188, 156);
+}
+
+.nav-bar-menu  {
+  font-size: 14px;
+  font-family: "OpenSans";
+  color: rgb(15, 1, 1);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 0.786;
+}
+
+.nav-bar-menu li{
+    float: right;
+}
+
+.nav-bar-menu li:not(:last-child) {
+    margin-right: 30px;
+}
+
