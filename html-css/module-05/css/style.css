@@ -64,6 +64,15 @@ font-size: 0;
 .slaider {
     position: relative;
     height: 600px;
+    background-position: center;
+    background-color: rgb(0, 0, 2);
+    background-image: url(../images/slide4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slaider > .container {
+    position: relative;
 }
 
 .slaider-ctrl {
@@ -90,45 +99,15 @@ font-size: 0;
     background-image: url(../images/svg/arrow-right.png);
 }
 
-.slaides {
-    padding: 0;
-    margin: 0;
-    list-style: none;     
-}
-
-.slaides-image {
-    position: relative;
-    object-fit: cover;
-    height: 600px;
-    background-position: center;
-    background-color: rgb(0, 0, 2);
-    background-image: url(../images/slide.jpg);
-    background-repeat: no-repeat;
-}
-
-.slaides-image::after {
-    content: "";
-    position: absolute;
-    height: 600px;
-    width: 1110px;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(50, 50, 50, 0.5);
-}
-
 .slaider-position {
-    display: block;
+    display: inline-block;
     width: 760px;
     position: absolute;
-    top: 50%;
+    top: 270px;
     right: 50%;
     transform: translate(50%, -50%);
     z-index: 2;
 }
-
-
 
 .slaider h2 {
     margin: 0;
