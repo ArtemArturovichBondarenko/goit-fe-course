@@ -1,3 +1,14 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: inherit;
+}
+
+
 .container {
     width: 940px;
     margin: 0 auto;
@@ -11,6 +22,7 @@
 }
 
 .menu-logo a {
+    display: block;
     text-decoration: none;
     font-size: 26px;
     font-family: "Dancing Script";
@@ -28,6 +40,7 @@
 }
 
 .menu-list-item a {
+    display: block;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat";
@@ -46,7 +59,7 @@
     font-family: "Montserrat";
     color: rgb(34, 34, 34);
     font-weight: bold;
-    text-transform: capitalize;
+    text-transform: uppercase;
     line-height: 1.8;
     text-align: center;
 }
@@ -64,7 +77,7 @@
 .title-list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 122px;
+    padding-bottom: 122px;
 }
 
 .title-list-item {
@@ -110,8 +123,7 @@
     line-height: 1.4;
 }
 
-footer {
-    /* height: 678px; */
+.background-registration {
     background-color: #222222;
     background-image: url(../images/backgrpund.jpg);
     background-repeat: no-repeat;
@@ -125,7 +137,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    align-content: space-evenly;
 }
 
 .registration-heading {
@@ -145,20 +157,21 @@ footer {
     font-family: "Crimson Text";
     color: rgb(119, 119, 119);
     font-style: italic;
+    text-transform: none;
     line-height: 1.2;
     text-align: center;
 }
 
-form {
+.form-registration {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-input, 
-textarea {
-    box-sizing: border-box;
+.registration-name,
+.registration-email,
+.subject,
+.comments {
     width: 455px;
     padding-left: 20px;
     border: 1px solid rgb(204, 204, 204);
@@ -171,33 +184,34 @@ textarea {
     line-height: 1.2;
 }
 
-input {
+.registration-name,
+.registration-email,
+.subject {
     height: 52px;
     margin-bottom: 29px;
     margin-right: 30px;
 }
 
-textarea {
+.comments {
     height: 214px;
     padding-top: 20px;
 }
 
-.registration-items input[name='name']:invalid,
-.registration-items input[name='email']:invalid,
-.registration-list textarea[name='message']:invalid {
+.registration-name:invalid,
+.registration-email:invalid,
+.comments:invalid {
     outline: 3px solid red;
 }
 
-.registration-items input[name='name']:valid,
-.registration-items input[name='email']:valid,
-.registration-list textarea[name='message']:valid {
+.registration-name:valid,
+.registration-email:valid,
+.comments:valid {
     outline: 3px solid green;
 }
 
 
 
-button {
-    box-sizing: border-box;
+.push-register {
     width: 240px;
     height: 65px;
     padding-left: 20px;
@@ -205,9 +219,16 @@ button {
     border-radius: 4px;
     font-size: 14px;
     font-family: "Montserrat";
-    color: rgb(255, 255, 255);
+    color: rgb(187, 187, 187);
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
+    transition-duration: 0.3s;
+}
+
+.push-register:hover,
+.push-register:focus {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
     background-color: rgb(254, 209, 54);
 }
