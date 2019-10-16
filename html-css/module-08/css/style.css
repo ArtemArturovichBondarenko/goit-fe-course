@@ -283,10 +283,9 @@ header {
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
     header {
-        min-width: 1024px;
-        height: 700px;
+        min-width: 960px;
         background-image: url(../img/Vector\ Smart\ Object-1440.jpg);
     }
 
