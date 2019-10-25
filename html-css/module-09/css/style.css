@@ -1,4 +1,4 @@
-header {
+.background-image {
     min-width: 320px;
     height: 540px;
     margin-bottom: 72px;
@@ -8,12 +8,12 @@ header {
     background-repeat: no-repeat;
 }
 
-.container {
+/* .container {
     width: 320px;
     padding: 0 10px;
     margin: 0 auto;
     box-sizing: border-box;
-}
+} */
 
 .list-navigation {
     display: flex;
@@ -28,7 +28,7 @@ header {
 .list-item-navigation a {
     padding: 12px 20px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Montserrat";
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -77,7 +77,7 @@ header {
     text-align: center;
 }
 
-.dreams a {
+.dreams-button {
     display: block;
     padding: 14px 50px;
     text-decoration: none;
@@ -93,8 +93,8 @@ header {
     transition-duration: 0.2s;
 }
 
-.dreams a:hover,
-.dreams a:focus {
+.dreams-button:hover,
+.dreams-button:focus {
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(255, 78, 80) ;
     color: rgb(255, 78, 80);
@@ -125,8 +125,6 @@ header {
     height: 32px;
     border-radius: 50%;
     border: 5px solid rgb(255, 255, 255);
-    
-
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -176,7 +174,7 @@ header {
     margin-bottom: 30px;
 }
 
-.partner-bottom {
+.partner-button {
     display: block;
     margin-bottom: 56px;
     padding: 14px 50px;
@@ -192,15 +190,15 @@ header {
     transition-duration: 0.2s;
 }
 
-.partner-bottom:hover,
-.partner-bottom:focus {
+.partner-button:hover,
+.partner-button:focus {
     background-color: rgb(255, 78, 80);
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
 @media (min-width: 768px) {
-    header {
+    .background-image {
         min-width: 768px;
         height: 700px;
         background-image: url(../img/Vector\ Smart\ Object-768.jpg);
@@ -239,7 +237,7 @@ header {
         font-weight: 400;
     }
 
-    .dreams a {
+    .dreams-button {
         width: 226px;
         margin: 0 auto;
         padding: 14px 2px;
@@ -275,7 +273,7 @@ header {
         order: 4;
     }
 
-    .partner-bottom {
+    .partner-button {
         width: 226px;
         margin: 0 auto;
         padding: 14px 2px;
@@ -284,7 +282,7 @@ header {
 }
 
 @media (min-width: 960px) {
-    header {
+    .background-image {
         min-width: 960px;
         background-image: url(../img/Vector\ Smart\ Object-1440.jpg);
     }
@@ -303,7 +301,7 @@ header {
     }
 
     .partner-item:not(:nth-child(4n)) {
-        margin-right: 20px;
+        margin-right: 0;
     }
 
     .display-none {
