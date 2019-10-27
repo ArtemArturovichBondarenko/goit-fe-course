@@ -22,7 +22,8 @@
 }
 
 .list-item-navigation {
-    padding-top: 30px;   
+    padding-top: 30px; 
+    box  
 }
 
 .list-item-navigation a {
@@ -57,6 +58,10 @@
     text-align: center;
 }
 
+.dreams {
+    box-sizing: border-box;
+}
+
 .headind-dreams {
     margin-bottom: 24px;
     font-size: 30px;
@@ -77,20 +82,23 @@
     text-align: center;
 }
 
-.dreams-button {
+.link {
     display: block;
     padding: 14px 50px;
     text-decoration: none;
     font-size: 14px;
     font-family: "Montserrat";
-    color: rgb(255, 255, 255);
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
     border-radius: 28px;
+    transition-duration: 0.2s;
+}    
+
+.dreams-button {
+    color: rgb(255, 255, 255);
     border: 2px solid rgba(255, 78, 80, 0) ;
     background-color: rgb(255, 78, 80);
-    transition-duration: 0.2s;
 }
 
 .dreams-button:hover,
@@ -175,19 +183,9 @@
 }
 
 .partner-button {
-    display: block;
-    margin-bottom: 56px;
-    padding: 14px 50px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 78, 80);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
+    margin-bottom: 56px;    
+    color: rgb(255, 78, 80);    
     border: 2px solid rgb(255, 78, 80) ;
-    border-radius: 28px;
-    transition-duration: 0.2s;
 }
 
 .partner-button:hover,
