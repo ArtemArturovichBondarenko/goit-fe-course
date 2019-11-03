@@ -49,7 +49,7 @@
     padding-top: 28px;
     margin-bottom: 228px;
 }
-.menu__logo__link {
+.menu__logo-link {
     text-decoration: none;
     font-size: 30px;
     font-family: "Montserrat";
@@ -145,7 +145,7 @@
             align-items: center;
 }
 
-.header__section__title {
+.header__section-title {
     margin-bottom: 124px;
     font-size: 150px;
     font-family: "Montserrat";
@@ -156,7 +156,7 @@
     line-height: 0.933;
 }
 
-.header__section__subtitle {
+.header__section-subtitle {
     margin-bottom: 58px;
     font-size: 72px;
     font-family: "Kaushan Script";
@@ -348,7 +348,7 @@
     }
 }
 
-.service__items__title {
+.service__items-title {
     margin-bottom: 16px;
     font-size: 14px;
     font-family: "Montserrat";
@@ -356,7 +356,7 @@
     text-transform: uppercase;
 }
 
-.service__items__text {
+.service__items-text {
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
@@ -526,7 +526,7 @@
     fill: rgb(255, 255, 255);
 }
 
-.team__text--name {
+.team__text-name {
     margin-top: 28px;
     font-size: 14px;
     font-family: "Montserrat";
@@ -536,7 +536,7 @@
     line-height: 1.2;
 }
 
-.team__text--work {
+.team__text-work {
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
