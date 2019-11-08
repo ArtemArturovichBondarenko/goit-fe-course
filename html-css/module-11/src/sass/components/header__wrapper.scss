@@ -1,0 +1,27 @@
+.header__wrapper {
+  position: relative;
+  background-image: url(../images/Layer.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi) {
+  .header__wrapper {
+    background-image: url(../images/Layer@2x.jpg);
+  }
+}
+
+.header__wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: -moz-linear-gradient($gradient);
+  background-image: -webkit-linear-gradient($gradient);
+  background-image: -ms-linear-gradient($gradient);
+  opacity: 0.8;
+}

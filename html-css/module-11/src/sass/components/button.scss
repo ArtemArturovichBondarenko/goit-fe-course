@@ -1,0 +1,36 @@
+.button {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: none;
+  height: 40px;
+  width: 150px;
+  font-size: 14px;
+  font-family: $font-Montserrat;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.button--transparent {
+  margin-bottom: 228px;
+  background: transparent;
+  border: 3px solid rgb(255, 255, 255);
+
+  &:hover,
+  &:focus {
+    border: none;
+    background-color: $hover-color;
+  }
+}
+
+.button--blue:hover,
+.button--blue:focus {
+  border: none;
+  background-color: $hover-color;
+}
