@@ -1,310 +1,307 @@
 header {
-    min-width: 320px;
-    height: 540px;
-    margin-bottom: 72px;
-    background-color: #000;
-    background-image: url(../img/Vector\ Smart\ Object-320.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
+  min-width: 320px;
+  height: 540px;
+  margin-bottom: 72px;
+  background-color: #000;
+  background-image: url(../img/Vector\Smart\Object-320.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
-    width: 320px;
-    padding: 0 10px;
-    margin: 0 auto;
-    box-sizing: border-box;
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .list-navigation {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 130px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 130px;
 }
 
 .list-item-navigation {
-    padding-top: 30px;   
+  padding-top: 30px;
 }
 
 .list-item-navigation a {
-    padding: 12px 20px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    border: 2px solid rgba(255, 255, 255, 0);
-    border-radius: 24px;
-    transition-duration: 0.2s;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 24px;
+  transition-duration: 0.2s;
 }
 
-.list-item-navigation a:hover ,
+.list-item-navigation a:hover,
 .list-item-navigation a:focus {
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, 1);
-    cursor: pointer;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 1);
+  cursor: pointer;
 }
 
 .heading-navigation {
-    margin-bottom: 34px;
-    font-size: 20px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
+  margin-bottom: 34px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .headind-dreams {
-    margin-bottom: 24px;
-    font-size: 30px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
+  margin-bottom: 24px;
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .paragraf-dreams {
-    margin-bottom: 36px;
-    font-size: 18px;
-    font-family: "Roboto";
-    color: rgb(255, 255, 255);
-    line-height: 1.2;
-    text-align: center;
+  margin-bottom: 36px;
+  font-size: 18px;
+  font-family: "Roboto";
+  color: rgb(255, 255, 255);
+  line-height: 1.2;
+  text-align: center;
 }
 
 .dreams a {
-    display: block;
-    padding: 14px 50px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    border-radius: 28px;
-    border: 2px solid rgba(255, 78, 80, 0) ;
-    background-color: rgb(255, 78, 80);
-    transition-duration: 0.2s;
+  display: block;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border-radius: 28px;
+  border: 2px solid rgba(255, 78, 80, 0);
+  background-color: rgb(255, 78, 80);
+  transition-duration: 0.2s;
 }
 
 .dreams a:hover,
 .dreams a:focus {
-    background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(255, 78, 80) ;
-    color: rgb(255, 78, 80);
-    cursor: pointer;
-    outline: none;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 78, 80);
+  color: rgb(255, 78, 80);
+  cursor: pointer;
+  outline: none;
 }
 
 .header-partner {
-    margin-bottom: 18px;
-    font-size: 22px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .partner-item {
-    position: relative;
+  position: relative;
 }
 
 .partner-item::after {
-    position: absolute;
-    top: 89px;
-    left: calc(50% + 32px);
-    content: "";
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    border: 5px solid rgb(255, 255, 255);
-    
+  position: absolute;
+  top: 89px;
+  left: calc(50% + 32px);
+  content: "";
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 5px solid rgb(255, 255, 255);
 
-    background-position: center;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .layer-1::after {
-    background-color: rgb(255, 78, 80);
-    background-image: url(../img/icon-tv.png);
+  background-color: rgb(255, 78, 80);
+  background-image: url(../img/icon-tv.png);
 }
 
 .layer-2::after {
-    background-color: rgb(255, 165, 7);
-    background-image: url(../img/icon-flask.png);
+  background-color: rgb(255, 165, 7);
+  background-image: url(../img/icon-flask.png);
 }
 
 .layer-3::after {
-    background-color: rgb(28, 215, 173);
-    background-image: url(../img/icon-coffee.png);
+  background-color: rgb(28, 215, 173);
+  background-image: url(../img/icon-coffee.png);
 }
 
 .layer-4::after {
-    background-color: rgb(78, 115, 219);
-    background-image: url(../img/icon-telegram.png);
+  background-color: rgb(78, 115, 219);
+  background-image: url(../img/icon-telegram.png);
 }
 
 .partner-item img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 22px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
 }
 
 .partner-item h3 {
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(51, 51, 51);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 22px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 22px;
 }
 
 .partner-item p {
-    font-size: 14px;
-    font-family: "Roboto";
-    color: rgb(102, 102, 102);
-    line-height: 1.2;
-    text-align: center;
-    margin-bottom: 30px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .partner-bottom {
-    display: block;
-    margin-bottom: 56px;
-    padding: 14px 50px;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(255, 78, 80);
-    font-weight: bold;
-    line-height: 1.2;
-    text-align: center;
-    border: 2px solid rgb(255, 78, 80) ;
-    border-radius: 28px;
-    transition-duration: 0.2s;
+  display: block;
+  margin-bottom: 56px;
+  padding: 14px 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 78, 80);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 28px;
+  transition-duration: 0.2s;
 }
 
 .partner-bottom:hover,
 .partner-bottom:focus {
-    background-color: rgb(255, 78, 80);
-    color: rgb(255, 255, 255);
-    cursor: pointer;
+  background-color: rgb(255, 78, 80);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
-    header {
-        min-width: 768px;
-        height: 700px;
-        background-image: url(../img/Vector\ Smart\ Object-768.jpg);
-    }
+  header {
+    min-width: 768px;
+    height: 700px;
+    background-image: url(../img/Vector\Smart\Object-768.jpg);
+  }
 
-    .container {
-        width: 748px;
-    }
+  .container {
+    width: 748px;
+  }
 
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-bottom: 154px;
-    }
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 154px;
+  }
 
-    .list-navigation {
-        order: 2;
-        margin-bottom: 0;
-    }
+  .list-navigation {
+    order: 2;
+    margin-bottom: 0;
+  }
 
-    .heading-navigation {
-        order: 1;
-        margin-bottom: 0;
-    }
+  .heading-navigation {
+    order: 1;
+    margin-bottom: 0;
+  }
 
-    .headind-dreams {
-        font-size: 52px;
-        margin-bottom: 40px;
-    }
+  .headind-dreams {
+    font-size: 52px;
+    margin-bottom: 40px;
+  }
 
-    .paragraf-dreams {
-        font-size: 24px;
-        font-weight: 400;
-    }
+  .paragraf-dreams {
+    font-size: 24px;
+    font-weight: 400;
+  }
 
-    .dreams a {
-        width: 226px;
-        margin: 0 auto;
-        padding: 14px 2px;
-    }
+  .dreams a {
+    width: 226px;
+    margin: 0 auto;
+    padding: 14px 2px;
+  }
 
-    .partner-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .partner-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-    .partner-item {
-        width: 236px;
-    }
+  .partner-item {
+    width: 236px;
+  }
 
-    .partner-item:nth-child(odd) {
-        margin-right: 20px;
-    }
+  .partner-item:nth-child(odd) {
+    margin-right: 20px;
+  }
 
-    .layer-1 {
-        order: 1;
-    }
+  .layer-1 {
+    order: 1;
+  }
 
-    .layer-2 {
-        order: 3;
-    }
+  .layer-2 {
+    order: 3;
+  }
 
-    .layer-3 {
-        order: 2;
-    }
+  .layer-3 {
+    order: 2;
+  }
 
-    .layer-4 {
-        order: 4;
-    }
+  .layer-4 {
+    order: 4;
+  }
 
-    .partner-bottom {
-        width: 226px;
-        margin: 0 auto;
-        padding: 14px 2px;
-        margin-bottom: 56px;
-    }
+  .partner-bottom {
+    width: 226px;
+    margin: 0 auto;
+    padding: 14px 2px;
+    margin-bottom: 56px;
+  }
 }
 
 @media (min-width: 960px) {
-    header {
-        min-width: 960px;
-        background-image: url(../img/Vector\ Smart\ Object-1440.jpg);
-    }
+  header {
+    min-width: 960px;
+    background-image: url(../img/Vector\Smart\Object-1440.jpg);
+  }
 
-    .container {
-        width: 942px;
-        padding: 0;
-    }
+  .container {
+    width: 942px;
+    padding: 0;
+  }
 
-    .partner-list {
-        justify-content: space-between;
-    }
+  .partner-list {
+    justify-content: space-between;
+  }
 
-    .partner-item {
-        width: 220px;
-    }
+  .partner-item {
+    width: 220px;
+  }
 
-    .partner-item:not(:nth-child(4n)) {
-        margin-right: 20px;
-    }
+  .partner-item:not(:nth-child(4n)) {
+    margin-right: 20px;
+  }
 }
-
-

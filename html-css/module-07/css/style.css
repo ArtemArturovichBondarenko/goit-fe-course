@@ -1,234 +1,230 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: inherit;
+  -webkit-box-sizing: inherit;
 }
 
-
 .container {
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 110px;
 }
 
 .menu-logo a {
-    display: block;
-    text-decoration: none;
-    font-size: 26px;
-    font-family: "Dancing Script";
-    text-transform: capitalize;
-    color: rgb(254, 209, 54);
+  display: block;
+  text-decoration: none;
+  font-size: 26px;
+  font-family: "Dancing Script";
+  text-transform: capitalize;
+  color: rgb(254, 209, 54);
 }
 
 .menu-list {
-    display: flex;
-
+  display: flex;
 }
 
 .menu-list-item {
-    margin-right: 40px;
+  margin-right: 40px;
 }
 
 .menu-list-item a {
-    display: block;
-    text-decoration: none;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(34, 34, 34);
-    text-transform: uppercase;
-    transition-duration: 0.15s;
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  text-transform: uppercase;
+  transition-duration: 0.15s;
 }
 
 .menu-list-item a:hover {
-    color: rgb(254, 209, 54);
+  color: rgb(254, 209, 54);
 }
 
 .title-heading {
-    margin-bottom: 50px;
-    font-size: 40px;
-    font-family: "Montserrat";
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.8;
-    text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.8;
+  text-align: center;
 }
 
 .title-heading span {
-    display: block;
-    font-size: 16px;
-    font-family: "Crimson Text";
-    text-transform: none;
-    color: rgb(119, 119, 119);
-    font-style: italic;
-    text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: "Crimson Text";
+  text-transform: none;
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  text-align: center;
 }
 
 .title-list {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 122px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 122px;
 }
 
 .title-list-item {
-    position: relative;
-    width: 290px;
-    padding-top: 104px;
-    text-align: center;
+  position: relative;
+  width: 290px;
+  padding-top: 104px;
+  text-align: center;
 }
 
 .title-list-item::before {
-    content: "";
-    position: absolute;
-    width: 74px;
-    height: 73px;
-    top: 25%;
-    transform: translate(-50%,-50%);
+  content: "";
+  position: absolute;
+  width: 74px;
+  height: 73px;
+  top: 25%;
+  transform: translate(-50%, -50%);
 }
 
 .basket::before {
-    background-image: url(../images/Basket.png);
+  background-image: url(../images/Basket.png);
 }
 
 .laptop::before {
-    background-image: url(../images/Laptop.png);
+  background-image: url(../images/Laptop.png);
 }
 
 .locked::before {
-    background-image: url(../images/Locked.png);
+  background-image: url(../images/Locked.png);
 }
 
 .title-list-item-heading {
-    font-size: 18px;
-    font-family: "Montserrat";
-    color: rgb(34, 34, 34);
-    font-weight: bold;
-    line-height: 2;
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 2;
 }
 
 .title-list-item-paragraph {
-    font-size: 14px;
-    font-family: "RobotoSlab";
-    color: rgb(119, 119, 119);
-    line-height: 1.4;
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 1.4;
 }
 
 .background-registration {
-    background-color: #222222;
-    background-image: url(../images/backgrpund.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+  background-color: #222222;
+  background-image: url(../images/backgrpund.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .registration {
-    height: 678px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: space-evenly;
+  height: 678px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: space-evenly;
 }
 
 .registration-heading {
-    width: 100%;
-    font-size: 40px;
-    font-family: "Montserrat";
-    color: rgb(255, 255, 255);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    text-align: center;
+  width: 100%;
+  font-size: 40px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .registration-heading span {
-    display: block;
-    font-size: 16px;
-    font-family: "Crimson Text";
-    color: rgb(119, 119, 119);
-    font-style: italic;
-    text-transform: none;
-    line-height: 1.2;
-    text-align: center;
+  display: block;
+  font-size: 16px;
+  font-family: "Crimson Text";
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  text-transform: none;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .form-registration {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .registration-name,
 .registration-email,
 .subject,
 .comments {
-    width: 455px;
-    padding-left: 20px;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 4px;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(187, 187, 187);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
+  width: 455px;
+  padding-left: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
 .registration-name,
 .registration-email,
 .subject {
-    height: 52px;
-    margin-bottom: 29px;
-    margin-right: 30px;
+  height: 52px;
+  margin-bottom: 29px;
+  margin-right: 30px;
 }
 
 .comments {
-    height: 214px;
-    padding-top: 20px;
+  height: 214px;
+  padding-top: 20px;
 }
 
 .registration-name:invalid,
 .registration-email:invalid,
 .comments:invalid {
-    outline: 3px solid red;
+  outline: 3px solid red;
 }
 
 .registration-name:valid,
 .registration-email:valid,
 .comments:valid {
-    outline: 3px solid green;
+  outline: 3px solid green;
 }
 
-
-
 .push-register {
-    width: 240px;
-    height: 65px;
-    padding-left: 20px;
-    border: 1px solid rgb(204, 204, 204);
-    border-radius: 4px;
-    font-size: 14px;
-    font-family: "Montserrat";
-    color: rgb(187, 187, 187);
-    font-weight: bold;
-    text-transform: uppercase;
-    line-height: 1.2;
-    transition-duration: 0.3s;
+  width: 240px;
+  height: 65px;
+  padding-left: 20px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(187, 187, 187);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  transition-duration: 0.3s;
 }
 
 .push-register:hover,
 .push-register:focus {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    background-color: rgb(254, 209, 54);
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  background-color: rgb(254, 209, 54);
 }
