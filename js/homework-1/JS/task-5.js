@@ -46,3 +46,31 @@ switch (delivery.toLowerCase()) {
 }
 
 console.log(message);
+
+
+
+
+
+// повторяет на самом деле одно и то же ( и лучше писать без конкатенации)
+
+// `Доставка в ${countryDelivery } будет стоить ${price} кредитов`;
+
+// Достаточно один раз определить countryDelivery
+// = delivery [0].toUpperCase() + delivery .slice(1).toLowerCase();
+
+// И задавать price
+// case CNINA:
+// priсe = 100;
+// break;
+
+// чтобы один раз определить текст:
+// default:
+// message = NOT_DELIVERY;
+// }
+// }
+
+// if (priсe > 0) {
+// const PRICE_DELIVERY = `Доставка в ${countryName} будет стоить ${priсe} кредитов`;
+// message = PRICE_DELIVERY;
+// }
+// alert(message);
