@@ -3,13 +3,14 @@ const numbers = [];
 let total = 0;
 
 do {
-  input = Number(prompt('Введите число'));
-  if (input === null && input === 0) {
+  input = prompt('Введите число');
+  const inputNumber = Number(input);
+  if (inputNumber === null && inputNumber === 0) {
     break;
-  } else if (Number.isNaN(input)) {
+  } else if (Number.isNaN(inputNumber)) {
     alert('Было введено не число, попробуйте еще раз');
   }
-  numbers.push(input);
+  numbers.push(inputNumber);
 } while (input !== null && input !== 0);
 for (const number of numbers) {
   total += number;
