@@ -6,7 +6,7 @@ const getUserNames = users => {
   });
 };
 
-// console.log(getUserNames(users));
+console.log(getUserNames(users));
 //--------------------------------------------------
 
 const getUsersWithEyeColor = (users, color) => {
@@ -15,7 +15,7 @@ const getUsersWithEyeColor = (users, color) => {
   });
 };
 
-// console.log(getUsersWithEyeColor(users, 'blue'));
+console.log(getUsersWithEyeColor(users, 'blue'));
 //----------------------------------
 
 const getUsersWithGender = (users, gender) => {
@@ -23,30 +23,30 @@ const getUsersWithGender = (users, gender) => {
   return getGender.map(user => user.name);
 };
 
-// console.log(getUsersWithGender(users, 'male'));
+console.log(getUsersWithGender(users, 'male'));
 //------------------------------------------
 
 const getInactiveUsers = users => {
   return users.filter(user => !user.isActive);
 };
 
-// console.log(getInactiveUsers(users));
+console.log(getInactiveUsers(users));
 //-------------------------------------------
 
 const getUserWithEmail = (users, email) => {
   return users.find(user => user.email === email);
 };
 
-// console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
-// console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
+console.log(getUserWithEmail(users, 'shereeanthony@kog.com')); // {объект пользователя Sheree Anthony}
+console.log(getUserWithEmail(users, 'elmahead@omatom.com')); // {объект пользователя Elma Head}
 //------------------------------------------------------------
 
 const getUsersWithAge = (users, min, max) => {
   return users.filter(user => user.age > min && user.age < max);
 };
 
-//   console.log(getUsersWithAge(users, 20, 30));
-//   console.log(getUsersWithAge(users, 30, 40));
+console.log(getUsersWithAge(users, 20, 30));
+console.log(getUsersWithAge(users, 30, 40));
 //----------------------------------------------------------
 
 const calculateTotalBalance = users => {
@@ -55,7 +55,7 @@ const calculateTotalBalance = users => {
   }, 0);
 };
 
-// console.log(calculateTotalBalance(users));
+console.log(calculateTotalBalance(users));
 //------------------------------------------------------
 
 const getUsersWithFriend = (users, friendName) => {
@@ -63,8 +63,8 @@ const getUsersWithFriend = (users, friendName) => {
   return getFriend.map(user => user.name);
 };
 
-// console.log(getUsersWithFriend(users, 'Briana Decker'));
-// console.log(getUsersWithFriend(users, 'Goldie Gentry'));
+console.log(getUsersWithFriend(users, 'Briana Decker'));
+console.log(getUsersWithFriend(users, 'Goldie Gentry'));
 //-------------------------------------------------
 
 const getNamesSortedByFriendsCount = users => {
@@ -74,7 +74,7 @@ const getNamesSortedByFriendsCount = users => {
   return sortFriends.map(user => user.name);
 };
 
-// console.log(getNamesSortedByFriendsCount(users));
+console.log(getNamesSortedByFriendsCount(users));
 //--------------------------------------------------------------
 
 const getSortedUniqueSkills = users => {
