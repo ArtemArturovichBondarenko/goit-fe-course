@@ -10,3 +10,5 @@ input.addEventListener('input', handleFontSize);
 function handleFontSize(event) {
   span.style.fontSize = `${event.target.value}px`;
 }
+
+
