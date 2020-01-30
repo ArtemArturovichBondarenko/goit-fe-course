@@ -5,24 +5,51 @@
 // Создай функции increment и decrement для увеличения и уменьшения значения счетчика
 // Добавь слушатели кликов на кнопки, вызовы функций и обновление интерфейса
 
-let counterValue = 0;
-
-const result = document.querySelector('#value');
-
-const increment = () => {
-  counterValue += 1;
-  result.textContent = counterValue;
+const refs = {
+  counter: document.querySelector('#counter'),
+  value: document.querySelector('#value'),
 };
 
-const decrement = () => {
-  counterValue -= 1;
-  result.textContent = counterValue;
+const actions = {
+  state: {
+    value: 0,
+  },
+  decrement() {
+    this.state.value -= 1;
+  },
+  increment() {
+    this.state.value += 1;
+  },
 };
 
-document
-  .querySelector('#counter button[data-action="increment"]')
-  .addEventListener('click', increment);
+const changeValue = ({ target }) => {
+  actions[target.dataset.action]();
+  refs.value.textContent = actions.state.value;
+};
 
-document
-  .querySelector('#counter button[data-action="decrement"]')
-  .addEventListener('click', decrement);
+refs.counter.addEventListener('click', changeValue);
+
+
+
+//----------------------------------------------
+// let counterValue = 0;
+
+// const result = document.querySelector('#value');
+
+// const increment = () => {
+//   counterValue += 1;
+//   result.textContent = counterValue;
+// };
+
+// const decrement = () => {
+//   counterValue -= 1;
+//   result.textContent = counterValue;
+// };
+
+// document
+//   .querySelector('#counter button[data-action="increment"]')
+//   .addEventListener('click', increment);
+
+// document
+//   .querySelector('#counter button[data-action="decrement"]')
+//   .addEventListener('click', decrement);

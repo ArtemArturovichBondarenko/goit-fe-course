@@ -7,10 +7,11 @@
 // текст заголовка элемента (тега h2) и количество элементов в категории
 // (всех вложенных в него элементов li).
 
-const numberOfCategories = document.querySelectorAll('.item');
-console.log(`В списке ${numberOfCategories.length} категории.`);
+const categories = document.querySelector('#categories');
+console.log(`В списке ${categories.children.length} категории.`);
 
-for (let node of document.querySelectorAll('.item')) {
-  console.log(`Категория: ${node.querySelector('h2').textContent} 
-  Колличество элементов: ${node.querySelectorAll('li').length}`);
-}
+const str = [...categories.children]
+.map(e => `${e.children[0].textContent}: ${e.children[1].children.length}`)
+.join('\n');
+console.log(str)
+
