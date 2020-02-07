@@ -32,6 +32,10 @@ const handleCloseModal = function() {
   refs.lightbox.classList.remove('is-open');
 };
 
+const handleClose = () => {
+  handleCloseModal();
+};
+
 const handleCloseEsc = function(evt) {
   if (evt.key === 'Escape') {
     handleCloseModal();
@@ -39,4 +43,5 @@ const handleCloseEsc = function(evt) {
 };
 refs.gallery.addEventListener('click', handleOriginalImage);
 refs.button.addEventListener('click', handleCloseModal);
+refs.picture.addEventListener('click', handleClose);
 refs.gallery.addEventListener('keydown', handleCloseEsc);
