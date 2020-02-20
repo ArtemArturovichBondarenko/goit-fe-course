@@ -4,14 +4,15 @@ const refs = {
   picture: document.querySelector('.lightbox__image'),
   lightbox: document.querySelector('.js-lightbox'),
   button: document.querySelector('.lightbox__button'),
+  img: document.querySelector('.gallery__image'),
 };
 
 const drawToHTML = galleryItems
   .map(
-    elem =>
+    (elem, index) =>
       `<li class='gallery__item'>
         <a target="blank" class="gallery__link" href="${elem.original}">
-        <img class="gallery__image" src="${elem.preview}" data-source="${elem.original}" alt="${elem.description}"/>
+        <img class="gallery__image" src="${elem.preview}" data-source="${elem.original}" data-index="${index}" alt="${elem.description}"/>
         </a>
     </li>`,
   )
@@ -24,6 +25,7 @@ const handleOriginalImage = function(evt) {
   refs.picture.setAttribute('src', target.dataset.source);
   refs.picture.setAttribute('alt', target.alt);
   refs.lightbox.classList.add('is-open');
+  refs.picture.setAttribute('data-index', target.dataset.index);
 };
 
 const handleCloseModal = function() {
@@ -41,7 +43,32 @@ const handleCloseEsc = function(evt) {
     handleCloseModal();
   }
 };
+
+const setNextImg = function(evt) {
+  if (!refs.picture.dataset.index) return;
+  let index = +refs.picture.dataset.index;
+  if (evt.key === 'ArrowRight') {
+    if (index === galleryItems.length - 1) return;
+    index += 1;
+    open(index);
+    return;
+  }
+  if (evt.key === 'ArrowLeft') {
+    if (index === 0) return;
+    index -= 1;
+    open(index);
+    return;
+  }
+};
+
+const open = i => {
+  refs.picture.setAttribute('src', galleryItems[i].original);
+  refs.picture.setAttribute('alt', galleryItems[i].original);
+  refs.picture.setAttribute('data-index', [i]);
+};
+
 refs.gallery.addEventListener('click', handleOriginalImage);
 refs.button.addEventListener('click', handleCloseModal);
-refs.picture.addEventListener('click', handleClose);
+refs.lightbox.addEventListener('click', handleClose);
 refs.gallery.addEventListener('keydown', handleCloseEsc);
+refs.gallery.addEventListener('keydown', setNextImg);
